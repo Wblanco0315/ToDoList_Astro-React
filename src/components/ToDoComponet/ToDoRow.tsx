@@ -26,8 +26,8 @@ export default function ToDoRow({ id, task, onDelete, onSave,moveAbove,moveBelow
 
   return (
     <>
-      <tr className="hover:bg-gray-50 hover:-translate-y-0.5 transition-transform">
-        <td className="px-6 py-4 text-sm text-gray-900">{id}</td>
+      <tr className="hover:bg-gray-100 hover:-translate-y-1 transition-transform focus-within:-translate-y-1.5 focus-within:shadow-lg focus-within:bg-gray-100">
+        <td className="px-6 py-4 text-sm text-gray-900"><input type="checkbox" className="peer"/></td>
         {isEditable ? (
           <>
             <td className="px-6 py-4">
@@ -51,7 +51,7 @@ export default function ToDoRow({ id, task, onDelete, onSave,moveAbove,moveBelow
           </>
         ) : (
           <>
-            <td className="px-6 py-4 text-lg w-full">{editValue}</td>
+            <td className="px-6 py-4 text-lg w-full peer-checked:line-through">{editValue}</td>
             <td className="px-6 py-4 text-sm font-medium flex flex-row  justify-evenly gap-1">
               <button
                 onClick={() => editTask(id)}

@@ -85,9 +85,9 @@ export default function ToDoTable() {
       <ToDoInput addTask={(task) => addTask(task)} />
       <table className="w-full bg-white shadow-md rounded-lg overflow-hidden">
         <thead>
-          <tr className="bg-gray-100 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-            <th className="px-6 py-3 ">id</th>
-            <th className="px-6 py-3 ">Task Name</th>
+          <tr className="bg-gray-100 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" >
+            <th className="px-6 py-3 "></th>
+            <th className="px-6 py-3 " >Task Name</th>
             <th className="px-6 py-3 ">Actions</th>
             <th></th>
           </tr>
